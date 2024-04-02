@@ -1,0 +1,4 @@
+opencv-python~=4.9.0.80
+numpy~=1.26.4
+tqdm~=4.66.2
+pytube~=15.0.0
