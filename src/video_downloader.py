@@ -10,6 +10,6 @@ def download_video(url, save_path='./'):
         print("Downloading: \"" + video.title + "\" with quality " + video.resolution)
         video_path = video.download(output_path=save_path)
         print("Downloading finished successfully")
-        return video_path, video.fps, video.title
+        return video_path, video.fps, video.title, yt.video_id
     except Exception as e:
         print("An error occurred during downloading: ", str(e))

@@ -5,6 +5,7 @@ from tqdm.auto import tqdm
 
 def scene_change_detector(frames):
     scene_changes = []
+    scene_changes_frames = []
     vis = []
     metric_values = []
 
@@ -177,6 +178,7 @@ def scene_change_detector(frames):
                 votes += 1
             if votes >= 4 and idx > 2:
                 scene_changes.append(idx)
+                scene_changes_frames.append(frame)
             metric_values.append([abs_value, mse_value, bright_value, color_value, canny_edge_value])
         else:
             metric_values.append([0, 0, 0, 0, 0])
@@ -190,4 +192,4 @@ def scene_change_detector(frames):
 
         ###  END CODE HERE  ###
 
-    return scene_changes, vis, metric_values, thresh_values
+    return scene_changes, scene_changes_frames
