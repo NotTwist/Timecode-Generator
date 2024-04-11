@@ -1,11 +1,17 @@
 # Timecode Generator
+## Automate Youtube descriptions
 A python script designed to automate the process of creating chapters in YouTube videos by detecting scene changes and cuts. It works by downloading the video from a YouTube link, then using a heuristic scene change detector it finds all cuts in the video and saves timecodes in a /output directory.
+## Generate chapter names
+The script also has a simple chapter name generation based on the image after scene change. It uses [this](https://github.com/jmisilo/clip-gpt-captioning) small model based on OpenAI's CLIP and GPT-2 to generate a simple description for an image.
 ## Usage
 * Have Python 3 installed
+* Download model from [here](https://drive.google.com/file/d/1Gh32arzhW06C1ZJyzcJSSfdJDi3RgWoG/view?usp=sharing) and paste next to predict.py inside `src/clip_gpt_captioning/src/`
 * Install requirements: `pip install -r requirements.txt`
 * run \_\_main__.py
 * Paste link to a video
-* Timecodes will be saved in output directory
+* Timecodes and descriptions will be saved in output directory
+## Example
+Using this [example video](https://www.youtube.com/watch?v=kOBHegu6KoU):
 
 ## Notes
 1. Scene detection is not perfect, especially with motion graphics. It works best for traditional videos with camera.
