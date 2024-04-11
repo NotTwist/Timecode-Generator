@@ -99,7 +99,7 @@ if __name__ == "__main__":
 def predict_description(image):
     import os
 
-    print(os.getcwd())
+    # print(os.getcwd())
     config = ConfigL()
 
     # set seed

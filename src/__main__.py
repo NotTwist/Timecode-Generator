@@ -19,10 +19,10 @@ if __name__ == "__main__":
     descriptions = []
     for frame in tqdm(scene_changes_frames):
         description = get_description(frame)
-        print(description)
+        # print(description)
         descriptions.append(description)
     timecodes = np.column_stack((np.array(scene_changes), np.array(descriptions)))
-    print(timecodes)
+    # print(timecodes)
     timecodes = convert_frames(timecodes, fps)
     print("Timecodes for scene changes:")
     print(*timecodes, sep='\n')
