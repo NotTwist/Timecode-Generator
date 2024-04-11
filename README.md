@@ -13,10 +13,19 @@ The script also has a simple chapter name generation based on the image after sc
 ## Example
 Using this [example video](https://www.youtube.com/watch?v=kOBHegu6KoU):
 
-1. `Timecode: 00:19 Man holding a baby in a field.`
+1. Timecode: 00:19 Man holding a baby in a field.
 ![Example 1](example1.jpeg)
+
+3. Timecode: 00:40 Man in a blue shirt is holding a blue cup.
+![Example 2](example2.jpeg)
+
+5. Timecode: 01:49 Man in a blue shirt is sitting at a desk with a computer.
+![Example 3](example3.jpeg)
+
+## Best use case 
+From my experience, scene change detection works best with videos that have static camera, simple shots that are different from each other. Chapter description works best for videos that have well lit and clear enviroments and have people. The best practical use case is for automatic generation of chapters in stock footage videos, since they fit all the criteria mentioned above.
 
 ## Notes
 1. Scene detection is not perfect, especially with motion graphics. It works best for traditional videos with camera.
-2. YouTube requires chapters be at least 10 seconds long. If scene changes happen quickly, chapter length might be shorter than expected. So you have to delete unneeded timecodes (which you will probably do anyway, as scenes are not a perfect way to identify chapters)
-3. This program doesn't account for audio and uses only the difference between frames to find cuts. It is best to be used as a first step to creating chapters, then cleaning them from unneeded timecodes add maybe adding additional. 
+2. YouTube requires chapters be at least 10 seconds long. If scene changes happen quickly (like in highly edited videos), chapter length might be shorter than expected, so yo umight have to delete unneeded timecodes.
+3. This program doesn't account for audio and uses only the difference between frames to find cuts. It is best to be used as a first step to creating chapters, then cleaning them from unneeded timecodes add maybe adding additional.
