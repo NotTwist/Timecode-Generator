@@ -13,6 +13,9 @@ The script also has a simple chapter name generation based on the image after sc
 ## Example
 Using this [example video](https://www.youtube.com/watch?v=kOBHegu6KoU):
 
+1. `Timecode: 00:19 Man holding a baby in a field.`
+![Example 1](example1.jpeg)
+
 ## Notes
 1. Scene detection is not perfect, especially with motion graphics. It works best for traditional videos with camera.
 2. YouTube requires chapters be at least 10 seconds long. If scene changes happen quickly, chapter length might be shorter than expected. So you have to delete unneeded timecodes (which you will probably do anyway, as scenes are not a perfect way to identify chapters)
