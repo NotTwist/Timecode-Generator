@@ -27,4 +27,4 @@ From my experience, scene change detection works best with videos that have stat
 
 ## Notes
 1. Scene detection is not perfect, especially with motion graphics. It works best for traditional videos with camera.
-2. YouTube requires chapters be at least 10 seconds long. If scene changes happen quickly (like in highly edited videos), chapter length might be shorter than expected, so yo umight have to delete unneeded timecodes.
+2. YouTube requires chapters be at least 10 seconds long. If scene changes happen quickly (like in highly edited videos), chapter length might be shorter than expected, so you might have to delete unneeded timecodes.
